@@ -1,0 +1,203 @@
+    1  ssh vagrant@127.0.0.1 -i /Users/xxxx/.vagrant/machines/default/virtualbox -p 2222
+    2  exit
+    3  sudo yum -y update kernel
+    4  exit
+    5  ssh vagrant@127.0.0.1 -i /Users/xxxx/.vagrant/machines/default/virtualbox -p 2222
+    6  exit
+    7  ssh vagrant@127.0.0.1 -i /Users/xxxx/.vagrant/machines/default/virtualbox -p 2222
+    8  exit
+    9  sudo yum -y groupinstall "development tools"
+   10  sudo yum -y install epel-release wget
+   11  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+   12  sudo rpm -Uvh remi-release-7.rpm
+   13  sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+   14  php -v
+   15  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   16  php composer-setup.php
+   17  php -r "unlink('composer-setup.php');"
+   18  sudo mv composer.phar /usr/local/bin/composer
+   19  composer -v
+   20  ls /
+   21  ls /usr
+   22  pwd
+   23  cd /vagrant
+   24  pwd
+   25  cd ~
+   26  cd /
+   27  cd -
+   28  cd .
+   29  cd..
+   30  cd ..
+   31  cd ../../
+   32  cd /vagrant
+   33  cd usr
+   34  cd /usr
+   35  cd /vagrant
+   36  mkdir server_lesson && cd server_lesson
+   37  git init
+   38  touch first.txt
+   39  git status
+   40  git add .
+   41  git status
+   42  git commit -m 'first commit'
+   43  git status
+   44  git log
+   45  git remote add origin https://github.com/HiroakiOkada925/server_lesson.git
+   46  git remote -v
+   47  git push origin master
+   48  git branch
+   49  git status
+   50  git log
+   51  git status
+   52  cd /vagrant
+   53  mkdir server_lesson/linux_practice/public
+   54  cd /vagrant
+   55  mkdir -p server_lesson/linux_practice/public
+   56  ls server_lesson server_lesson/linux_practice
+   57  cd /vagrant
+   58  touch server_lesson/linux_practice/public/index.php
+   59  ls server_lesson/linux_practice/public
+   60  cd /vagrant/server_lesson && ls
+   61  cd /vagrant/server_lesson/linux_practice/public
+   62  cp index.php index_bk.php
+   63  ls
+   64  cd /vagrant/server_lesson/linux_practice
+   65  cp -r public tmp
+   66  ls ./ public tmp
+   67  cd /vagrant
+   68  mv server_lesson/linux_practice server_lesson/linux_practice1
+   69  mkdir linux_practice2 linux_practice3
+   70  mv ./linux_practice2 ./server_lesson
+   71  cd /vagrant/server_lesson/linux_practice1/tmp/
+   72  rm *_bk.php
+   73  cd /vagrant
+   74  rm server_lesson/first.txt
+   75  rm -r linux_practice3
+   76  ls server_lesson
+   77  cd /vagrant/server_lesson
+   78  echo '# サーバレッスン' > README.md
+   79  echo 'Linuxプラクティス' >> README.md
+   80  echo '-----------------' >> README.md
+   81  cat README.md
+   82  cd /vagrant/server_lesson
+   83  vi README.md
+   84  git add .
+   85  git status
+   86  git diff
+   87  git commit -m '課題１'
+   88  git status
+   89  git log
+   90  git push origin master
+   91  pwd
+   92  ls
+   93  cd linux_practice2
+   94  pwd
+   95  mkdir documents
+   96  ls
+   97  cd documents
+   98  touch gizumo01.md
+   99  rm -r documents
+  100  rm -r linux_practice2
+  101  cd /vagrant
+  102  rm -r documents
+  103  rm -r linux_practice2
+  104  cd documents
+  105  pwd
+  106  ls
+  107  server_lesson
+  108  cd server_lesson
+  109  pwd
+  110  ls
+  111  cd linux_practice2
+  112  pwd
+  113  ls
+  114  cd documents
+  115  touch gizumo02.md
+  116  touch gizumo03.md
+  117  touch gizumo04.md
+  118  touch gizumo05.md
+  119  touch gizumo06.md
+  120  touch gizumo07.md
+  121  touch gizumo08.md
+  122  touch gizumo09.md
+  123  touch gizumo10.md
+  124  touch gizumo11.md
+  125  touch gizumo12.md
+  126  touch gizumo13.md
+  127  touch gizumo14.md
+  128  touch gizumo15.md
+  129  touch gizumo16.md
+  130  touch gizumo17.md
+  131  touch gizumo18.md
+  132  touch gizumo19.md
+  133  touch gizumo20.md
+  134  touch gizumo21.md
+  135  touch gizumo22.md
+  136  touch gizumo23.md
+  137  touch gizumo24.md
+  138  touch gizumo25.md
+  139  touch gizumo26.md
+  140  touch gizumo27.md
+  141  touch gizumo28.md
+  142  touch gizumo29.md
+  143  touch gizumo30.md
+  144  touch gizumo31.md
+  145  touch gizumo32.md
+  146  touch gizumo33.md
+  147  touch gizumo34.md
+  148  touch gizumo35.md
+  149  touch gizumo36.md
+  150  touch gizumo37.md
+  151  touch gizumo38.md
+  152  touch gizumo39.md
+  153  touch gizumo40.md
+  154  touch gizumo1.md
+  155  touch gizumo41.md
+  156  touch gizumo42.md
+  157  touch gizumo43.md
+  158  touch gizumo44.md
+  159  touch gizumo45.md
+  160  touch gizumo46.md
+  161  touch gizumo47.md
+  162  touch gizumo48.md
+  163  touch gizumo49.md
+  164  touch gizumo50.md
+  165  pwd
+  166  ls
+  167  cd /vagrant
+  168  mkdir -p server_lesson/linux_practice2/trash
+  169  cd linux_practice2
+  170  cd /linux_practice2
+  171  pwd
+  172  ls
+  173  server_lesson
+  174  cd server_lesson
+  175  pwd
+  176  ls
+  177  cd linux_practice2
+  178  mv ./gizumo20.md ./trash
+  179  mv ./documents/gizumo20.md ./trash
+  180  mv ./documents/gizumo21.md ./trash
+  181  mv ./documents/gizumo22.md ./trash
+  182  mv ./documents/gizumo23.md ./trash
+  183  mv ./documents/gizumo24.md ./trash
+  184  mv ./documents/gizumo25.md ./trash
+  185  mv ./documents/gizumo26.md ./trash
+  186  mv ./documents/gizumo27.md ./trash
+  187  mv ./documents/gizumo28.md ./trash
+  188  mv ./documents/gizumo29.md ./trash
+  189  mv ./documents/gizumo30.md ./trash
+  190  mv ./documents/gizumo31.md ./trash
+  191  mv ./documents/gizumo32.md ./trash
+  192  mv ./documents/gizumo33.md ./trash
+  193  mv ./documents/gizumo34.md ./trash
+  194  mv ./documents/gizumo35.md ./trash
+  195  mv ./documents/gizumo36.md ./trash
+  196  mv ./documents/gizumo37.md ./trash
+  197  mv ./documents/gizumo38.md ./trash
+  198  mv ./documents/gizumo39.md ./trash
+  199  mv ./documents/gizumo40.md ./trash
+  200  touch .gitignore
+  201  vi .gitignore
+  202  touch exec_command.log
+  203  history 300
